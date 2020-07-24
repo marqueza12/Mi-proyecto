@@ -1,0 +1,329 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .clearfix {
+        /* Eliminar los flotados*/
+        float: none;
+        clear: both;
+    }
+    
+    #global {
+        /* Esta es la variable global PLASMADA EN HTML, aqui le modificamos la altura, anchura, etc*/
+        width: 65%;
+        /*con esto determinas que tan centrado esta la imagen */
+        margin: 0px auto;
+        margin-top: 30px;
+        padding: 25px;
+        background: rgba(255, 250, 250, 0.80);
+        box-shadow: 0px 0px 2px gray;
+        color: none;
+        /*color de las letras deñ parrafo */
+    }
+    
+    #logo {
+        font-family: Arial, Helvetica;
+        /* estilo de las letras*/
+        font-size: 28px;
+        letter-spacing: 10px;
+        /* para que las letras se separen entre si*/
+        line-height: 85px;
+        /* altura de la linea*/
+        /* background: green; */
+        /*fondo */
+        color: rgb(204, 198, 198);
+        /*color de las letras */
+        text-align: center;
+        width: center 900px;
+        /*anchura */
+        height: 80px;
+        /* altura*/
+        margin-bottom: 10px;
+        float: center;
+        /* para que se vaya a un lado */
+        text-transform: uppercase;
+        /* para colocar cualquier texto en mayuscula*/
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    #menu {
+        /* aqui editamos el fondo de la linea donde estan las opciones del menu*/
+        font-family: Helvetica, Arial;
+        background: rgb(51, 51, 51);
+        width: 100%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    #menu ul {
+        line-height: 46px;
+        list-style: none;
+    }
+    
+    #menu ul li {
+        height: 46px;
+        display: inline-block;
+        /* para colocar los elementos en LINEA*/
+        transition: all 100ms;
+    }
+    /*#menu ul li:hover{       /* cuando le pasemos el click por encima CAMBIA DE COLOR*/
+    /* background:  green
+}
+*/
+    
+    #menu a {
+        display: block;
+        color: rgb(238, 231, 231);
+        text-decoration: none;
+        padding-left: 30px;
+        /* separacion entre ENLACE Y ENLACE*/
+        padding-right: 30px;
+    }
+    
+    #posts {
+        width: 60%;
+        float: left;
+        /* se incline a la izquierda(left)*/
+        font-family: Helvetica, Arial;
+    }
+    
+    .post {
+        /* colocamos el . porque post esta CONTENIDO en posts como una subclase*/
+        padding: 7px;
+    }
+    
+    h2 {
+        font-family: Helvetica, Arial;
+        font-size: 30px;
+        color: rgb(7, 17, 7);
+    }
+    
+    .post .date {
+        /* Dia de publicado*/
+        display: block;
+        color: rgb(7, 7, 7);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /*color de fondo de las letras*/
+        /*separacion del parrafo supersior*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    
+    .post p {
+        margin-top: 25px;
+        /* margen superior*/
+        margin-bottom: 20px;
+        /* margen inferior*/
+        line-height: 22px;
+        text-align: justify;
+        /* para justificar el texto, tipo word*/
+    }
+    
+    .button-more {
+        font-size: 14px;
+        text-align: center;
+        /*background: green;*/
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        margin-top: 10px;
+        /* margen superior*/
+        width: 70px;
+        margin-bottom: 20px;
+    }
+    
+    #sidebar {
+        font-family: Helvetica, Arial;
+        /* para colocar EL TIPO DE LETRA*/
+        width: 31%;
+        float: right;
+        /* colocarlo a la izquierda o derecha o automatica en este caso*/
+    }
+    
+    #sidebar h4 {
+        margin-top: 50px;
+        /* margen superior*/
+        margin-bottom: 20px;
+        /* margen inferior */
+        text-align: center;
+        /* alineacion del texto, en este caso central*/
+        line-height: 10px;
+        /* espacio entre cada una de las LINEAS del PARRAFO*/
+        color: #333;
+        background: url("../img/lines.png") repeat-x;
+        /*bienvenido */
+    }
+    
+    #sidebar h4 span {
+        /* asi el fondo de "quien soy" se vuelve blanco*/
+        background: none padding 5px;
+    }
+    
+    #sidebar img {
+        /* Para ajustar el tamaño y las dimenciones de la imagen*/
+        width: 100%;
+    }
+    
+    #sidebar p {
+        font-size: 15px;
+        /* para colocarle las dimenciones en donde ve se a plasmar el parrafo en la pagina*/
+        text-align: justify;
+    }
+    /* para modificar la parte visual de el LOGIN */
+    
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="number"],
+    select {
+        padding: 5px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        width: 80%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    /* para modificar el boton*/
+    
+    form input[type="submit"] {
+        background: #eee;
+        padding: 10px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: pointer;
+        /* para que aparezca la mano de PULSAR encima del boton*/
+    }
+    
+    footer {
+        font-family: Helvetica, Arial;
+        color: white;
+        height: 47px;
+        background: rgba(51, 51, 51, 0.70);
+        /* Puedes difuminar los colores colocando al final el0.70*/
+        margin: 0px left;
+        width: 90%;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 50px;
+        line-height: 47px;
+    }
+    
+    .bx-wrapper,
+    .bx-viewport {
+        /* estas son las DIVISIONES(DIV) del SLIDER que podemos OBTENER INSPECCIONANDO la pagina y buscando el ID que posee el area*/
+        height: 250px !important;
+        /* el important le da prioridad  al formato, de forma que "machaca"todo lo que este en su paso*/
+    }
+    
+    #selector-theme {
+        /*  recuerda siempre colocar el # JODER*/
+        position: fixed;
+        top: 40%;
+        background: rgba(51, 51, 51, 0.5);
+        /* difuminado*/
+        width: 50px;
+        height: 100px;
+    }
+    
+    #to-green,
+    #to-red,
+    #to-blue {
+        width: 25px;
+        height: 25px;
+        border: 1px solid white;
+        display: block;
+        /* el elemento se mantiene fijo en al pagina dependiendod e la altura que le establecemos*/
+        margin: 0px auto;
+        /* para que se centre*/
+        margin-top: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    
+    #to-green {
+        background: #235E3D;
+    }
+    
+    #to-red {
+        background: #CA3413;
+    }
+    
+    #to-blue {
+        background: #1F87C4;
+    }
+    
+    .subir {
+        /* estilo del boton para subir*/
+        color: white;
+        text-decoration: none;
+        display: block;
+        float: right;
+    }
+    
+    #box {
+        width: 60%;
+        float: left;
+        margin-top: 40px;
+    }
+    
+    #acordeon {
+        margin-top: 20px;
+    }
+    
+    #reloj {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Helvetica, Arial;
+        color: #333;
+        border: 5px dashed #333;
+        width: 30%;
+        padding: 30px;
+        margin: 0px auto;
+    }
+    
+    #form_contact {
+        width: 50%;
+        margin-top: 15px;
+        font-family: Helvetica, Arial;
+    }
+    
+    #form_contact label {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .form-error {
+        /* float: right; */
+        font-size: 11px;
+        background: red;
+        color: white;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .slider {
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: change 2s infinite alternate;
+        animation-timing-function: ease-in;
+    }
+    
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider img {
+        width: 100%;
+    }
